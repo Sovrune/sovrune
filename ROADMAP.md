@@ -6,15 +6,15 @@
 - [x] Four provider adapters
 - [x] Deterministic Acme operating loop
 - [x] Command center and Docker deployment
-- [ ] Configuration wizard
-- [ ] Persistent decision and prediction ledger
+- [x] Configuration wizard
+- [x] Persistent decision and prediction ledger
 
 ## 0.2 — accountable execution
 
 - [ ] Office templates and capability requirements
 - [ ] Provider routing, fallbacks, and budgets
 - [ ] Artifact-backed issue workflow
-- [ ] Human approval queue
+- [x] Human approval queue
 - [ ] Outcome measurement windows
 
 ## 0.3 — connected company

@@ -29,7 +29,7 @@ pip install -e .
 sovrune serve
 ```
 
-## What ships in `v0.1.0-alpha`
+## What ships in the current alpha
 
 - Provenance-aware `BusinessState`
 - Company Adapter contract and fictional Acme adapter
@@ -39,6 +39,9 @@ sovrune serve
 - Animated command center
 - Zero runtime dependencies beyond Python 3.11+
 - Docker deployment and CI
+- SQLite operating runs and office artifacts
+- Persistent decisions, approvals, and predictions
+- CLI approval queue with token-gated HTTP mutations
 
 ## Bring your models
 
@@ -56,6 +59,16 @@ sovrune validate './north-star/adapter.py:NorthStarLabsAdapter'
 ```
 
 Follow the [five-minute quickstart](docs/QUICKSTART.md) and [Company Adapter SDK reference](docs/ADAPTER_SDK.md).
+
+## Run the accountability loop
+
+```bash
+sovrune operate
+sovrune approvals
+sovrune approve apr_... --by your-name
+```
+
+The prediction remains blocked until the pending decision is approved. See the [accountability-spine contract and API](docs/ACCOUNTABILITY.md).
 
 ## Architecture
 
