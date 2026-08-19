@@ -1,3 +1,5 @@
 """Sovrune public API."""
+from .core import BusinessState, CompanyAdapter, Evidence, Metric
 
-__version__ = "0.1.0-alpha.1"
+__all__ = ["BusinessState", "CompanyAdapter", "Evidence", "Metric"]
+__version__ = "0.2.0-alpha.1"

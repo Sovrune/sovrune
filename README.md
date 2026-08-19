@@ -48,6 +48,15 @@ Copy `.env.example` to `.env`. Choose a hosted provider, an OpenAI-compatible en
 
 Implement `CompanyAdapter.build_state()` and return aggregate metrics with source, date, and confidence. Sovrune rejects PII-shaped keys at the operating boundary. The adapter belongs beside the company systems; the operating layer consumes normalized state.
 
+Generate and validate a starter adapter:
+
+```bash
+sovrune init "North Star Labs" --output ./north-star --provider ollama
+sovrune validate './north-star/adapter.py:NorthStarLabsAdapter'
+```
+
+Follow the [five-minute quickstart](docs/QUICKSTART.md) and [Company Adapter SDK reference](docs/ADAPTER_SDK.md).
+
 ## Architecture
 
 ```text

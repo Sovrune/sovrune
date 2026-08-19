@@ -9,9 +9,9 @@ from importlib.resources import files
 from urllib.parse import urlparse
 
 from . import __version__
-from .demo import AcmeAdapter
 from .offices import run_operating_loop
 from .providers import configured_provider
+from .sdk import load_adapter
 
 
 class Handler(SimpleHTTPRequestHandler):
@@ -33,7 +33,8 @@ class Handler(SimpleHTTPRequestHandler):
         path = urlparse(self.path).path
         if path == "/healthz":
             return self._json({"status": "ok", "version": __version__})
-        state = AcmeAdapter().build_state()
+        state = load_adapter().build_state()
+        state.validate()
         if path == "/api/state":
             return self._json(state.to_dict())
         if path == "/api/loop":
