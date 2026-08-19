@@ -18,6 +18,8 @@ Open <http://localhost:8787>.
 
 Public website: [sovrune.com](https://sovrune.com)
 
+Browser-safe demo: [sovrune.com/demo.html](https://sovrune.com/demo.html). It uses fictional aggregate data, stores no credentials, and generates provider configuration locally in the browser.
+
 Without Docker:
 
 ```bash
