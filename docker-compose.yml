@@ -6,4 +6,9 @@ services:
     env_file:
       - path: .env
         required: false
+    volumes:
+      - sovrune-data:/app/data
     restart: unless-stopped
+
+volumes:
+  sovrune-data:
