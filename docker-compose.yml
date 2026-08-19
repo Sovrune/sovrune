@@ -1,0 +1,9 @@
+services:
+  sovrune:
+    build: .
+    ports:
+      - "8787:8787"
+    env_file:
+      - path: .env
+        required: false
+    restart: unless-stopped

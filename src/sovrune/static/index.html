@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Sovrune is the open-source operating system for AI-run companies.">
+  <title>Sovrune — Run the company, not just the agents</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header class="mast">
+    <a class="brand" href="#top" aria-label="Sovrune home"><span class="sigil">S</span><span>Sovrune</span></a>
+    <nav><a href="#loop">How it works</a><a href="#models">Your models</a><a href="#install">Install</a><a class="git" href="https://github.com/Sovrune/sovrune">GitHub ↗</a></nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Open source · self-hosted · model neutral</p>
+        <h1>Run the company.<br><em>Not just the agents.</em></h1>
+        <p class="lede">Sovrune turns business evidence into strategy, coordinated work, human-approved delivery, and measured outcomes.</p>
+        <div class="actions"><a class="primary" href="#install">Run locally</a><a class="secondary" href="mailto:hello@sovrune.com?subject=Founding%20design%20partner">We’ll deploy it for you</a></div>
+      </div>
+
+      <div class="circuit" aria-label="Live company operating loop">
+        <div class="circuit-head"><span><i></i> Acme Solar</span><b>OPERATING LOOP 014</b></div>
+        <div id="loopNodes" class="nodes" aria-live="polite"></div>
+        <div class="approval"><span>Human approval boundary</span><b>LOCKED</b></div>
+      </div>
+    </section>
+
+    <section class="proofbar"><span>Evidence before opinion</span><span>Any supported model</span><span>Human-approved action</span><span>Outcomes over activity</span></section>
+
+    <section id="loop" class="section thesis">
+      <p class="eyebrow">The accountability circuit</p>
+      <h2>Most AI products stop when the answer appears.</h2>
+      <p>Sovrune keeps going—until the decision is evidenced, the work is reviewed, and the outcome is measured.</p>
+      <div class="loopline">
+        <article><small>01</small><h3>Observe</h3><p>Normalize company signals with source, date, and confidence.</p></article>
+        <article><small>02</small><h3>Decide</h3><p>Find the constraint and record the expected business result.</p></article>
+        <article><small>03</small><h3>Execute</h3><p>Coordinate specialist offices through reviewable artifacts.</p></article>
+        <article><small>04</small><h3>Learn</h3><p>Measure the outcome and feed the verdict back into memory.</p></article>
+      </div>
+    </section>
+
+    <section id="models" class="section models">
+      <div><p class="eyebrow">Your models. Your boundary.</p><h2>No provider owns your operating system.</h2><p>Choose one model for everything or route each office independently. Hosted, local, or hybrid.</p></div>
+      <div class="model-list"><span>OpenAI-compatible</span><span>Anthropic</span><span>Gemini</span><span>Ollama</span><span>Local endpoints</span><span>More via adapters</span></div>
+    </section>
+
+    <section id="install" class="section install">
+      <div><p class="eyebrow">Community edition</p><h2>One command.<br>Your infrastructure.</h2><p>Start with the fictional Acme company, then implement the Company Adapter contract for your systems.</p></div>
+      <div class="terminal"><div><i></i><i></i><i></i><span>terminal</span></div><pre><code>git clone https://github.com/Sovrune/sovrune
+cd sovrune
+docker compose up --build</code></pre><button id="copy">Copy</button></div>
+    </section>
+
+    <section class="partner"><p class="eyebrow">Five founding partners</p><h2>Bring the company.<br>We’ll build the adapter.</h2><p>Managed deployment, two integrations, model configuration, and direct founder support.</p><a href="mailto:hello@sovrune.com?subject=Founding%20design%20partner">Apply for a design-partner seat →</a></section>
+  </main>
+  <footer><span>© 2026 Sovrune contributors</span><span>Apache 2.0 · Alpha software</span><a href="https://github.com/Sovrune/sovrune">Source ↗</a></footer>
+  <script src="/app.js"></script>
+</body>
+</html>
