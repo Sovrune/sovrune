@@ -70,6 +70,14 @@ sovrune approve apr_... --by your-name
 
 The prediction remains blocked until the pending decision is approved. See the [accountability-spine contract and API](docs/ACCOUNTABILITY.md).
 
+## Documentation
+
+- [Documentation home](docs/README.md) — choose the right path for evaluating, integrating, or operating Sovrune
+- [Configuration and model providers](docs/CONFIGURATION.md) — every environment variable and provider example
+- [HTTP API reference](docs/API.md) — endpoints, authentication, payloads, responses, and errors
+- [Deployment and operations](docs/DEPLOYMENT.md) — Docker, reverse proxy, backups, upgrades, and recovery
+- [Troubleshooting](docs/TROUBLESHOOTING.md) — common installation, adapter, provider, database, and API failures
+
 ## Architecture
 
 ```text
