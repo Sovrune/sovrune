@@ -21,6 +21,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      - uses: gitleaks/gitleaks-action@v2
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Scan repository history for verified secrets
+        uses: trufflesecurity/trufflehog@v3.90.12
+        with:
+          extra_args: --results=verified,unknown
